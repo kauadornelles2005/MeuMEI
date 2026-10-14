@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MeuMEI</title>
+<meta name="theme-color" content="#03131f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MeuMEI">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div class="top">
+    <button class="ib" id="back" onclick="go('mais')" aria-label="Voltar" style="display:none">‹</button>
+    <div class="grow"><h1 id="ttl"></h1><p id="sub"></p></div>
+    <button class="ib" id="bell" onclick="go('alertas')" aria-label="Alertas">🔔<i id="bdg"></i></button>
+  </div>
+  <div id="view"></div>
+</div>
+<button class="fab" id="fab" onclick="openTx()" aria-label="Novo lançamento">＋</button>
+<div id="sheet"></div>
+<nav><div id="tabs"></div></nav>
+<noscript><p style="padding:20px">O MeuMEI precisa de JavaScript para funcionar.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
